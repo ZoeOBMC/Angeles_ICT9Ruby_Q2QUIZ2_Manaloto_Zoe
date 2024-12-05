@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navigation Bar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #007bff;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: black;
+        }
+        .navbar-custom .nav-link:hover {
+            color: blue;
+        }
+        body {
+            background-image: url(cat.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .yummy {
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 1600px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="https://obmontessori.edu.ph/">OBMC</a>
+            <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://obmontessori.edu.ph/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com/maps/place/Operation+Brotherhood+Montessori+Center/@15.116155,119.9560484,8.88z/data=!4m10!1m2!2m1!1sOB+Montessori+Center,+Inc.!3m6!1s0x3396f237c7d7ec39:0xa3cae61a3f0a87ea!8m2!3d15.1373131!4d120.5971115!15sChpPQiBNb250ZXNzb3JpIENlbnRlciwgSW5jLiIDiAEBkgEKdW5pdmVyc2l0eeABAA!16zL20vMGY1MHM2?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">LOCATE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://obmontessori.edu.ph/contact-us">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 yummy">
+        <h3 class="mb-4">Robotics Club Registration Form</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleName">Name</label>
+                    <input type="text" class="form-control" id="exampleName" placeholder="Please Input your Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleEmail">Email Address</label>
+                    <input type="email" class="form-control" id="exampleEmail" placeholder="Please Input your email">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleAge">Age</label>
+                    <input type="number" class="form-control" id="exampleAge" placeholder="Please Input your Age">
+                </div>
+                <div class="form-group">
+                    <label for="examplePhoneNumber">Phone Number</label>
+                    <input type="tel" class="form-control" id="examplePhoneNumber" placeholder="Please Input your Phone Number">
+                </div>
+            </div>
+        </div>
+        <p>Preferred Robotics Topic</p>
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Programming</label>
+        </div>
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+            <label class="form-check-label" for="exampleCheck2">Electronics</label>
+        </div>
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck3">
+            <label class="form-check-label" for="exampleCheck3">Mechanical Devices</label>
+        </div>
+        <p>Robotics Experience Level</p>
+        <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" id="exampleRadio1" name="experienceLevel" value="beginner">
+            <label class="form-check-label" for="exampleRadio1">Beginner</label>
+        </div>
+        <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" id="exampleRadio2" name="experienceLevel" value="intermediate">
+            <label class="form-check-label" for="exampleRadio2">Intermediate</label>
+        </div>
+        <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" id="exampleRadio3" name="experienceLevel" value="advanced">
+            <label class="form-check-label" for="exampleRadio3">Advanced</label>
+        </div>
+        <div class="form-group">
+            <label for="dropdownMenu">Preferred Robotics Project</label>
+            <select class="form-control" id="dropdownMenu">
+                <option>Robotic Project 1</option>
+                <option>Robotic Project 2</option>
+                <option>Robotic Project 3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Statement of Interest</label>
+            <textarea class="form-control" id="comments" rows="5" placeholder="Please Input your Statement of Interest"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
